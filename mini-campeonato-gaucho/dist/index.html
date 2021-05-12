@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mini Campeonato Gaúcho </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  
+  <head>
+    <title>Tabela Gauchão</title>
+  </head>
+  
+  <body>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <section class="tabela">
+      <h1>Mini Campeonato Gaúcho</h1>
+      
+      <div class="containerTabela" id="containerTabela">
+        <table id="classificacao">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Nome</th>
+              <th>Pontos</th>
+              <th>Partidas</th>
+              <th>Vitórias</th>
+              <th>Empates</th>
+              <th>Derrotas</th>
+            </tr>
+          </thead>
+          <tbody id="caracteristicas">
+            
+          </tbody>
+        </table>
+      </div>
+      
+      <h2>Simule o resultado das partidas informando o resultado</h2>
+      
+      <div class="rodadas" id="rodadas">
+      <p>Rodada 1:</p>
+      <img src="https://ssl.gstatic.com/onebox/media/sports/logos/JrXw-m4Dov0gE2Sh6XJQMQ_48x48.png"><input type="number" id="valorUm" value="0" min="0" max="9"> X <input type="number" id="valorDois" value="0" min="0" max="9"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/OWVFKuHrQuf4q2Wk0hEmSA_48x48.png"><br>
+      <img src="https://ssl.gstatic.com/onebox/media/sports/logos/abHSe0XZKDWYfR52Vl_PTw_48x48.png"><input type="number" id="valorTres" value="0" min="0" max="9"> X <input type="number" id="valorQuatro" value="0" min="0" max="9"><img src="https://ssl.gstatic.com/onebox/media/sports/logos/Ku-73v_TW9kpex-IEGb0ZA_48x48.png"><br>  
+      </div>
+      
+      <button type="button" onClick="resultado()" id="resultado">Confirmar Resultados</button><br> 
+      <button type="button" onClick="rodadaDois()" id="rodadaDois">Segunda Rodada</button>
+      <button type="button" onClick="rodadaTres()" id="rodadaTres" disabled="true">Rodada Final</button> 
+    </section>
+    
+  </body>
+  
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
